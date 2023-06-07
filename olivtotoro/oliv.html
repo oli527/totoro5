@@ -1,0 +1,53 @@
+<!DOCTYPE html5> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form name="datos" action="totoro.php" method="get">
+		<table cellpadding="1" cellspacing="1" border="2" >
+			<tr><td colspan="2" align="center">Registro de Usuarios</td></tr>
+			<tr>
+			 <td>Nombre</td>	
+			 <td><input type="text" title="Se requiere Nombre" name="nombre"  size="67" placeholder="Nombre y apellido" required></td>
+			</tr>
+			<tr>
+			 <td>Sexo</td>
+			 <td>Hombre<input type="radio" name="sex" value="1">
+			     Mujer <input type="radio" name="sex" value="0"></td>
+			</tr>
+			<tr>
+			  <td>Hobbie(s)</td>
+			  <td>Arte      <input type="checkbox" name="gusto[]" value="Deportes">
+                  Danza        <input type="checkbox" name="gusto[]" value="Música">
+                  Futbol<input type="checkbox" name="gusto[]" value="Conciencia">
+                  Television      <input type="checkbox" name="gusto[]" value="Internet">
+                  Teatro      <input type="checkbox" name="gusto[]" value="Política">
+                  Canto         <input type="checkbox" name="gusto[]" value="Baile"> 
+			  </td>
+			</tr>
+			<tr>
+			  <td>Profesión</td>
+			  <td><select name="carrera">
+			  	<option value="IS">Doctor</option>
+			  	<option value="II">Abogado</option>
+			  	<option value="ME">Medicina</option>
+			  	<option value="DE">Estudiante</option>
+			  	<option value="AR">Musico</option>
+			  	<option value="CS">Ing. en sistemas</option>
+			  </select></td>
+			</tr>
+			<tr>
+			  <td> Algun Comentario</td>
+			  <td>
+			  	<textarea  name="mensaje" cols="50" rows="10" id="comment" placeholder="Escriba un comentario"></textarea>
+			  </td>
+			</tr>
+		</table>
+        <input type="submit" id="boton" value="Enviar">
+        <input type="reset" id="limpia" value="Reset">
+	</form>
+	<!-- <script type="text/javascript" src="totoro.js"></script>  -->
+</body>
+</html>
